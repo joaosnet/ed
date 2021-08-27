@@ -39,12 +39,27 @@ public class Arranjo<T> {
     /*
     3. b. Construa um método para inserir um dado na primeira posição do arranjo. 
     Movimente os dados pré-existentes preservando seu conteúdo e ordem. 
-    O dado é parâmetro do método. (João)
+    O dado é parâmetro do método.
     */
     public void insertFirst(T obj){
         int n = 0;
+        // aqui pega o número de elementos
         for (int i=0;i<this.Data.length;i++){
             n=i;
         }
+        
+        
+        // aqui adiciona cada elemento
+        for (int i=n-1;i>-1;i--){
+            
+                   if(this.Data[i]==null){
+                       
+                   }else{
+                       this.Data[i+1] = this.Data[i];
+                   }
+                        
+        } 
+        this.Data[0] = obj;
     }
+        
 }
