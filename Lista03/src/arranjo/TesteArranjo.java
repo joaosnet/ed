@@ -50,7 +50,7 @@ public class TesteArranjo {
         3. d. Construa um método para remover e retornar o dado da última posição 
         ocupada do arranjo.     
         */
-        arr1.remove();
+        System.out.println(arr1.remove());
         arr1.Imprime();
 
 	}   

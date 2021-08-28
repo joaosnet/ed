@@ -69,8 +69,8 @@ public class Arranjo<T> {
     do método.
     */
     public void add(int pos, T obj) {
-    	T data1 = Data[pos]; //recebe o dado que esta na posição a ser ocupada.
-    	T data2;			//variável auxiliar.
+    	T data1 = Data[pos];	//recebe o dado que esta na posição a ser ocupada.
+    	T data2;				//variável auxiliar.
     	this.Data[pos] = obj;
     	//Laço que muda a posição dos dados subsequentes.
     	for (int i = pos+1 ; i< this.Data.length; i++) {
@@ -84,9 +84,9 @@ public class Arranjo<T> {
     3. d. Construa um método para remover e retornar o dado da última posição 
     ocupada do arranjo.     
     */
-    public void remove(){
+    public T remove(){
     	T data = Data[Data.length-1];
     	this.Data[Data.length-1] = null;
-    	System.out.printf("Dado removido: %s\n",data);
+        return data;
     }
 }
