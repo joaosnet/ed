@@ -33,8 +33,10 @@ public class Arranjo<T> {
         for (int i=0;i<this.Data.length;i++){
             n=i;
         }
+        if(this.Data[n]==null){
+            this.Data[n] = obj;
+        }
         
-        this.Data[n] = obj;
     }
     /*
     3. b. Construa um método para inserir um dado na primeira posição do arranjo. 
@@ -47,8 +49,6 @@ public class Arranjo<T> {
         for (int i=0;i<this.Data.length;i++){
             n=i;
         }
-        
-        
         // aqui adiciona cada elemento
         for (int i=n-1;i>-1;i--){
             
