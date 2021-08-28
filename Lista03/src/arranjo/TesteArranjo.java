@@ -36,5 +36,22 @@ public class TesteArranjo {
         */
         arr1.insertFirst(sc.nextLine());
         arr1.Imprime();
+        
+        /*
+        3. c. Construa um método para inserir um dado em uma dada posição do arranjo. 
+        Preserve o conteúdo e a ordem dos dados subsequentes à posição desejada 
+        quando os mover de posição. O dado e a posição desejada são parâmetros 
+        do método.
+        */
+        arr1.add(0, "e");
+        arr1.Imprime();
+        
+        /*
+        3. d. Construa um método para remover e retornar o dado da última posição 
+        ocupada do arranjo.     
+        */
+        arr1.remove();
+        arr1.Imprime();
+
 	}   
 }
