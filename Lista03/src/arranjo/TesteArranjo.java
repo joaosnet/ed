@@ -58,7 +58,7 @@ public class TesteArranjo {
         do arranjo. Movimente os dados restantes preservando o conteúdo e a ordem 
         dos dados existentes.
         */
-        System.out.println("\n==== Quetão 3.e ====");
+        System.out.println("\n==== Questão 3.e ====");
         System.out.print("Dado da Primeira Posição: ");
         System.out.println(arr1.Q3_e());
         System.out.print("Arranjo reordenado: ");
@@ -70,7 +70,7 @@ public class TesteArranjo {
         desejada quando os mover de posição. A posição desejada é parâmetro do 
         método.
         */
-        System.out.println("\n==== Quetão 3.f ====");
+        System.out.println("\n==== Questão 3.f ====");
         arr1.Q3_f(0);
         System.out.print("Arranjo reordenado: ");
         arr1.Imprime();
