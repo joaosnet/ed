@@ -21,7 +21,7 @@ public class TesteArranjo {
         O dado é parâmetro do método. 
         */  
         System.out.println("\n==== Questão 3.a. ====");
-        System.out.println("Qual o último dado a ser inserido?");
+        System.out.println("Qual o dado a ser inserido na última posição não ocupada do arranjo?");
         arr1.insertLast(sc.nextLine());
         arr1.Imprime();
         /*
