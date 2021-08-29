@@ -89,4 +89,41 @@ public class Arranjo<T> {
     	this.Data[Data.length-1] = null;
         return data;
     }
+
+    /*
+    3. e. Construa um método para remover e retornar o dado da primeira posição 
+    do arranjo. Movimente os dados restantes preservando o conteúdo e a ordem 
+    dos dados existentes.
+    */
+    public T Q3_e(){
+    	T Pos0 = this.Data[0];
+    	this.Data[0] = null;
+        
+        for (int i = 0; i < (this.Data.length - 1); i++){
+            if (this.Data[i] == null){
+                this.Data[i] = this.Data[i+1];
+                this.Data[i+1] = null;
+            }
+        }
+        
+        return Pos0;
+    }
+    
+    /*
+    3. f. Construa um método para remover um dado em uma dada posição do 
+    arranjo. Preserve o conteúdo e a ordem dos dados subsequentes à posição 
+    desejada quando os mover de posição. A posição desejada é parâmetro do 
+    método.
+    */
+    public void Q3_f (int pos){
+        System.out.format("Remover dado da posição: [%d]\n", pos);
+        this.Data[pos] = null;
+        
+        for (int i = pos; i < (this.Data.length - 1); i++){
+            if (this.Data[i] == null){
+                this.Data[i] = this.Data[i+1];
+                this.Data[i+1] = null;
+            }
+        }
+    }
 }

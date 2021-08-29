@@ -53,5 +53,27 @@ public class TesteArranjo {
         System.out.println(arr1.remove());
         arr1.Imprime();
 
+        /*
+        3. e. Construa um método para remover e retornar o dado da primeira posição 
+        do arranjo. Movimente os dados restantes preservando o conteúdo e a ordem 
+        dos dados existentes.
+        */
+        System.out.println("\n==== Quetão 3.e ====");
+        System.out.print("Dado da Primeira Posição: ");
+        System.out.println(arr1.Q3_e());
+        System.out.print("Arranjo reordenado: ");
+        arr1.Imprime();
+        
+        /*
+        3. f. Construa um método para remover um dado em uma dada posição do 
+        arranjo. Preserve o conteúdo e a ordem dos dados subsequentes à posição 
+        desejada quando os mover de posição. A posição desejada é parâmetro do 
+        método.
+        */
+        System.out.println("\n==== Quetão 3.f ====");
+        arr1.Q3_f(0);
+        System.out.print("Arranjo reordenado: ");
+        arr1.Imprime();
+
 	}   
 }
