@@ -23,6 +23,7 @@ public class TesteArranjo {
         System.out.println("\n==== Questão 3.a. ====");
         System.out.println("Qual o último dado a ser inserido?");
         arr1.insertLast(sc.nextLine());
+        arr1.Imprime();
         /*
         3. b. Construa um método para inserir um dado na primeira posição do arranjo. 
         Movimente os dados pré-existentes preservando seu conteúdo e ordem. 
@@ -39,7 +40,7 @@ public class TesteArranjo {
         do método.
         */
         System.out.println("\n==== Questão 3.c. ====");
-        arr1.add(0, "e");
+        arr1.add(3, "e");
         arr1.Imprime();
         /*
         3. d. Construa um método para remover e retornar o dado da última posição 
