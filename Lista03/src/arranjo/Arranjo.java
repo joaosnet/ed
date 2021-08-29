@@ -45,20 +45,21 @@ public class Arranjo<T> {
     */
     public void insertFirst(T obj){
         int n = 0;
-        // aqui pega o número de elementos
+        // aqui calcula o número de elementos
         for (int i=0;i<this.Data.length;i++){
             n=i;
         }
-        // aqui adiciona cada elemento
+        //laço de repetição
         for (int i=n-1;i>-1;i--){
             
                    if(this.Data[i]==null){
-                       
+                   //Se o dado for desconhecido não faça nada    
                    }else{
+                   //Se não copie o dado i na próxima posição
                        this.Data[i+1] = this.Data[i];
-                   }
-                        
+                   }               
         } 
+        //Adicione o dado recebido na primeira posição
         this.Data[0] = obj;
     }
     
