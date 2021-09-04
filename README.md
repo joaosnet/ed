@@ -2,12 +2,6 @@
 
 This repo stores material used on the course Data Structures at UFPA
 
-A lista 3 resolvida pode ser encontrada no link abaixo:
-
-List 3 resolved can be found at the link below:
-
-https://docs.google.com/document/d/1w4rHS2j2LPxQP38WYFDrbyMemw2hPC9S/edit?usp=sharing&ouid=106449964628070338117&rtpof=true&sd=true
-
 Alunos/Students: 
 
                  Eduardo Morais Ribeiro – 202006840032 
