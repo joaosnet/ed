@@ -51,6 +51,8 @@ public class TestesGerais {
         }*/
         Pilha decisões = new Pilha(7);
         decisões.Push(0);
-        
+        for(i=0;i>n;i++){
+            
+        }
     }   
 }
