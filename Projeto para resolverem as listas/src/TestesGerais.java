@@ -28,20 +28,27 @@ public class TestesGerais {
 
         System.out.print("\n");*/
         //Questão 6 Lista 04
-        Pilha p1 = new Pilha(5);// enqueue
+        long tempoInicial = System.currentTimeMillis(); 
+        Pilha p1 = new Pilha(5);//queue
         p1.Push(1);
         p1.Push(2);
         p1.Push(3);
         p1.Push(4);
         p1.Push(5);
+        long tempoFinal = System.currentTimeMillis();
+        System.out.printf("Tempo de execução queue %.3f ms%n", (tempoFinal - tempoInicial) / 1000d);
+        tempoFinal = 0; 
         Pilha p2 = new Pilha(5);// dequeue
         p2.Push(p1.Pop());
         p2.Push(p1.Pop());
         p2.Push(p1.Pop());
         p2.Push(p1.Pop());
         p2.Push(p1.Pop());
+        tempoFinal = System.currentTimeMillis();
+        System.out.printf("Tempo de execução dequeue %.3f ms%n", (tempoFinal - tempoInicial) / 1000d);
         for (int i=0; i < 5; i++) {
             System.out.println(p2.Pop());
-    }
+        }
+        
     }   
 }
