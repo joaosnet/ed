@@ -27,7 +27,7 @@ public class TestesGerais {
             System.out.print(s.pop());
 
         System.out.print("\n");*/
-        //Questão 6 Lista 04
+        /*Questão 6 Lista 04
         long tempoInicial = System.currentTimeMillis(); 
         Pilha p1 = new Pilha(5);//queue
         p1.Push(1);
@@ -48,7 +48,9 @@ public class TestesGerais {
         System.out.printf("Tempo de execução dequeue %.3f ms%n", (tempoFinal - tempoInicial) / 1000d);
         for (int i=0; i < 5; i++) {
             System.out.println(p2.Pop());
-        }
+        }*/
+        Pilha decisões = new Pilha(7);
+        decisões.Push(0);
         
     }   
 }
