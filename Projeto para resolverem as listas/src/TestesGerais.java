@@ -29,12 +29,12 @@ public class TestesGerais {
         System.out.print("\n");*/
         //Questão 6 Lista 04
         Pilha p1 = new Pilha(5);// enqueue
-        Pilha p2 = new Pilha(5);// dequeue
         p1.Push(1);
         p1.Push(2);
         p1.Push(3);
         p1.Push(4);
         p1.Push(5);
+        Pilha p2 = new Pilha(5);// dequeue
         p2.Push(p1.Pop());
         p2.Push(p1.Pop());
         p2.Push(p1.Pop());
