@@ -49,10 +49,10 @@ public class TestesGerais {
         for (int i=0; i < 5; i++) {
             System.out.println(p2.Pop());
         }*/
-        Pilha decisões = new Pilha(7);
+        /*Pilha decisões = new Pilha(7);
         decisões.Push(0);
         for(i=0;i>n;i++){
             
-        }
+        }*/
     }   
 }
