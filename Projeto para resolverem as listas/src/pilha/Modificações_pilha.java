@@ -1,21 +1,16 @@
-
-import java.util.Stack;
-import pilha.Pilha;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package pilha;
 
 /**
  *
- * @author joaod
+ * @author João Neto 2
  */
-public class TestesGerais {
-
-    public static void main(String[] args) throws Exception{
+public class Modificações_pilha {
+    public static void main(String[] args) {
         /*Questão 5 Lista 04
         int n;
         n=50;
@@ -54,5 +49,5 @@ public class TestesGerais {
         for(i=0;i>n;i++){
             
         }*/
-    }   
+    }
 }

@@ -4,7 +4,7 @@ import lista.Elemento;
 import lista.ListaDuplaCauda;
 
 public class FilaSobreLista<T>{
-    ListaDuplaCauda ListaDuplaCauda = new ListaDuplaCauda();
+    ListaDuplaCauda<T> ListaDuplaCauda = new ListaDuplaCauda<T>();
     /*
     5 - Implemente a classe FilaSobreLista. Esta é uma reimplementação da classe 
     Fila (disponível em nosso repositório) utilizando um objeto da classe 
@@ -26,10 +26,13 @@ public class FilaSobreLista<T>{
     }
 
     public void Enqueue(Elemento<T> e) throws Exception {
-        ListaDuplaCauda.insereInicio(0, e);
+
+        ListaDuplaCauda.insereFim(0, e.getDados());
     }
 
     public Elemento Dequeue() throws Exception {
         return ListaDuplaCauda.getFim();
     }
+
+    
 }
