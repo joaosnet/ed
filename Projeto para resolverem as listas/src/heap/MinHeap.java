@@ -9,11 +9,13 @@ public class MinHeap {
     public MinHeap(int max) {
         this.maxSize = max;
         this.size = 0;
-        this.H = new int[max];
+
+        H = new int[max + 1];
+	H[0] = Integer.MIN_VALUE;
     }
 
     public int Parent(int i) {
-        return (int) Math.floor((i-1)/2); //floor(i/2) para arranjo começando em 1
+        return i/2;
     }
 
     public int LeftChild(int i) {
@@ -23,7 +25,7 @@ public class MinHeap {
     public int RightChild(int i) {
         return 2*i + 2; //2i+2 para arranjo começando em 1
     }
-
+    
     public void Swap(int i, int j) {
         int tmp = H[i];
         H[i] = H[j];
@@ -31,7 +33,7 @@ public class MinHeap {
     }
 
     public void ChangeUp(int i) {
-        if (i>0 && H[Parent(i)]<H[i]) {
+        if (i>0 && H[i]<H[Parent(i)]) {
             Swap(i,Parent(i));
             ChangeUp(Parent(i));
         }
@@ -65,12 +67,12 @@ public class MinHeap {
         if (size == maxSize) {
             throw new Exception("heap cheia");
         }
-        H[size] = p;
-        size++;
+        H[size++] = p;
+        
         ChangeUp(size-1);
     }
 
-    public int ExtractMax() {
+    public int ExtractMin() {
         int result = H[0];
         H[0] = H[size-1];
         size = size - 1;
@@ -79,9 +81,9 @@ public class MinHeap {
     }
 
     public void Remove (int i) {
-        H[i] = Integer.MAX_VALUE;
+        H[i] = Integer.MIN_VALUE;
         ChangeUp(i);
-        ExtractMax();
+        ExtractMin();
     }
 
     public void ChangeValue(int i, int p) {
@@ -96,7 +98,7 @@ public class MinHeap {
 
     public void Imprime() {
         System.out.print("[");
-        for (int i=0; i < size; i++) {
+        for (int i=0; i <= size; i++) {
             System.out.print(this.H[i]+" ");
         }
         System.out.println("]");
